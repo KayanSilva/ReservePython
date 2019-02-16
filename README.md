@@ -1,4 +1,4 @@
-##Programando em Python
+Programando em Python
 ---
 
 Com esse repositorio consisto em apresentar meus conhecimentos sobre a linguagem.
@@ -12,4 +12,4 @@ Teste sua sorte jogando o _Game Divider_ dentro de um container **Alpine**:
 - [ ] Entre na pasta src com "cd src"
 - [ ] Execute "python gameinpython" e escolha a opção 2
 
-###DIVIRTA-SE!!!
+**DIVIRTA-SE!!!**
