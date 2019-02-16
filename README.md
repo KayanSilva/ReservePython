@@ -10,6 +10,6 @@ Teste sua sorte jogando o _Game Divider_ dentro de um container **Alpine**:
 - [ ] Execute o DockerFile com o comando "docker build -t appgame ."
 - [ ] Suba o container executando "docker run -it appgame /bin/sh
 - [ ] Entre na pasta src com "cd src"
-- [ ] Execute "python gameinpython" e escolha a opção 2
+- [ ] Execute "python gameinpython.py" e escolha a opção 2
 
 **DIVIRTA-SE!!!**
