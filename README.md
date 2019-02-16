@@ -3,7 +3,7 @@ Programando em Python
 
 Com esse repositorio consisto em apresentar meus conhecimentos sobre a linguagem.
 
-Teste sua sorte jogando o _Game Divider_ dentro de um container **Alpine**:
+Teste sua sorte jogando o _Game Diviner_ dentro de um container **Alpine**:
 - [ ] Clone o repositorio para algum diretorio local.
 - [ ] Certifique-se que possui toda a configuração para executar containers na maquina.
 - [ ] Abra a pasta GamesInPython pelo prompt de comando.
