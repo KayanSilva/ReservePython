@@ -28,7 +28,7 @@ def play():
             print("Please, choice a number between 1 and 100.")
             continue
 
-        hit = kick == secret_number
+        kick == secret_number
         bigger = kick > secret_number
         small = kick < secret_number
 
