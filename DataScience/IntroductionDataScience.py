@@ -2,14 +2,15 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 name = "Kayan"
 print(name)
 age = 25
 print(age)
 
-grades = pd.read_csv("ratings.csv")
-movies = pd.read_csv("movies.csv")
+grades = pd.read_csv('ratings.csv')
+movies = pd.read_csv('movies.csv')
 movies.head()
 
 print(grades.head())
