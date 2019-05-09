@@ -12,11 +12,11 @@ dados.shape
 print('A base de dados possui {} registros e {} variaveis'.format(dados.shape[0], dados.shape[1]))
 
 ## Extra
-json = open('dados/aluguel.json')
+json = open('aluguel.json')
 print(json.read())
-dsjson = pd.read_json('dados/aluguel.json')
-dstxt = pd.read_table('dados/aluguel.txt')
-dsxlsx = pd.read_excel('dados/aluguel.xlsx')
+dsjson = pd.read_json('aluguel.json')
+dstxt = pd.read_table('aluguel.txt')
+dsxlsx = pd.read_excel('aluguel.xlsx')
 dshtml = pd.read_html('https://unafiscosaude.org.br/site/tabelas-de-precos-dos-planos-ativos-para-comercializacao/')
 dshtml[0]
 df_html = pd.read_html('https://www.federalreserve.gov/releases/h3/current/default.htm')
