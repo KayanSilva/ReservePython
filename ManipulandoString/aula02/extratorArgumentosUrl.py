@@ -5,6 +5,18 @@ class ExtratorArgumentosUrl:
         else:
             raise LookupError("Url invalida!!!")
 
+    def __len__(self):
+        return len(self.url)
+
+    def __str__(self):
+        moedaOrigem, moedaDestino = self.extrairArgumentos()
+        representacaoString = "Valor: {}\n Moeda Origem: {}\n Moeda Destino {}\n".format(
+            self.extrairValor(), moedaOrigem, moedaDestino)
+        return representacaoString
+
+    def __eq__(self, outraIntancia):
+        return self.url == outraIntancia.url
+
     @staticmethod
     def urlEhValida(url):
         if url and url.startswith("https://bytebank.com"):
@@ -16,18 +28,21 @@ class ExtratorArgumentosUrl:
         buscaMoedaOrigem = "moedaorigem=".lower()
         buscaMoedaDestino = "moedadestino=".lower()
 
-        indiceInicialMoedaOrigem = self.encontrarIndiceInicial(buscaMoedaOrigem)
+        indiceInicialMoedaOrigem = self.encontrarIndiceInicial(
+            buscaMoedaOrigem)
         indiceFinalMoedaOrigem = self.url.find("&")
 
         moedaOrigem = self.url[indiceInicialMoedaOrigem:indiceFinalMoedaOrigem]
-        
+
         if(moedaOrigem == "moedadestino"):
             self.trocaMoedaOrigem()
-            indiceInicialMoedaOrigem = self.encontrarIndiceInicial(buscaMoedaOrigem)
+            indiceInicialMoedaOrigem = self.encontrarIndiceInicial(
+                buscaMoedaOrigem)
             indiceFinalMoedaOrigem = self.url.find("&")
             moedaOrigem = self.url[indiceInicialMoedaOrigem:indiceFinalMoedaOrigem]
 
-        indiceInicialMoedaDestino = self.encontrarIndiceInicial(buscaMoedaDestino)
+        indiceInicialMoedaDestino = self.encontrarIndiceInicial(
+            buscaMoedaDestino)
         indiceFinalMoedaDestino = self.url.find("&valor")
         moedaDestino = self.url[indiceInicialMoedaDestino:indiceFinalMoedaDestino]
 
