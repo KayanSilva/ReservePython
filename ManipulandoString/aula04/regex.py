@@ -7,9 +7,9 @@ email4 = "lalalalaala 99543-1254 hfuqerheruhveurghequg 9999-8787 wdhurhqeugh 995
 
 padrao  = "[0123456789][0123456789][0123456789][0123456789][-][0123456789][0123456789][0123456789][0123456789]"
 padrao2 = "[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]"
-padrao3 = "[0-9]{4,5}[-][0-9]{4,5}"
+padrao3 = "[0-9]{4,5}[-][0-9]{4}"
 
-retorno = re.search(padrao3,email1) 
+retorno = re.search(padrao3,email1)
 print(retorno.group())
 
 retorno2 = re.findall(padrao3,email4) 
