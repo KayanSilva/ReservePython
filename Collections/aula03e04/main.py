@@ -87,6 +87,7 @@ class ContaSalario:
     def __str__(self):
         return "Codigo {}\n Saldo {}\n".format(self._codigo, self._saldo)
 
+
 class ContaMultiploSalario(ContaSalario):
     pass
 
@@ -96,7 +97,8 @@ print(conta1)
 conta2 = ContaCorrente(37)
 print(conta2)
 
-print("Comparação explicita", conta1 == conta2)
-print("Comparação dentro de uma lista", conta1 in [conta2])
+print("Comparação explicita:", conta1 == conta2)
+print("Comparação dentro de uma lista:", conta1 in [conta2])
 
-print("Hierarquia de classes para baixo", isinstance(ContaCorrente(34), Conta))
+print("Hierarquia de classes para baixo:",
+      isinstance(ContaCorrente(34), Conta))
