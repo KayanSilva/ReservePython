@@ -56,7 +56,7 @@ conta_do_gui = (15, 1000)
 print(conta_do_gui)
 print(deposita(conta_do_gui))
 
-#Tuplas de objetos e lista de tuplas
+# Tuplas de objetos e lista de tuplas
 usuarios = [guilherme, daniela]
 print(usuarios)
 usuarios.append(('Paulo', 39, 1979))
@@ -69,4 +69,4 @@ conta_da_dani.deposita(1000)
 
 contas = (conta_do_gui, conta_da_dani)
 for conta in contas:
-        print(conta)
+    print(conta)
