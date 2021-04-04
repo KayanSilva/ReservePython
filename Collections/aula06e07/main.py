@@ -21,6 +21,9 @@ class ContaSalario:
 
         return self._codigo == outro._codigo and self._saldo == outro._saldo
 
+    def __lt__(self, outro):
+        return self._saldo < outro._saldo
+
     def deposita(self, valor):
         self._saldo += valor
 
@@ -49,4 +52,8 @@ for conta in sorted(contas, key=extrai_saldo):
 
 # puxando direto da propriedade da classe
 for conta in sorted(contas, key=attrgetter("_saldo")):
+    print(conta)
+
+print(conta_do_guilherme < conta_da_daniela)
+for conta in sorted(contas):
     print(conta)
