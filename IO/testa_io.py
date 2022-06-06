@@ -1,11 +1,14 @@
-arquivo = open('dados/contatos-escrita.csv', encoding='latin_1', mode='a')
+arquivo = open('dados/contatos-escrita.csv', encoding='latin_1', mode='a+')
 
-print(type(arquivo))
+print(type(arquivo.buffer))
+
 
 texto_em_bytes = bytes('Esse é um texto em bytes', 'latin_1')
+# print(texto_em_bytes)
+# print(type(texto_em_bytes))
 
-contato_veronica = b'15,Veronica, veronica@veronica.com.br'
-arquivo.buffer.write(contato_veronica)
+contato = bytes('15,Verônica,veronica@veronica.com.br\n', 'latin_1')
+arquivo.buffer.write(contato)
 
 
 arquivo.close()
