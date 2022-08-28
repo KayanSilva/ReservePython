@@ -1,4 +1,9 @@
-nf, valor_total,tributo_federal,tributo_estadual
-20220606_Violeta,203.71,26.11,32
-20200614_Sams,1.649.82,222.33,113.37
-20200614_Sams,39.96,28.28,10.79
+tipo,nf, valor_total,tributo_federal,tributo_estadual
+mercado,20220606_Violeta,203.71,26.11,32
+mercado,20220614_Sams,1.649.82,222.33,113.37
+mercado,20220614_Sams,39.96,28.28,10.79
+restaurante,20220618_Andiamo,311.88,18.06,53.74
+padaria,20220614_Barbotti,34.80,4.69,2.99
+mercado,20220618_Zaffari,143.95,19.37,22.21
+mercado,20220610_Violeta,9.67,1.31,1.29
+mercado,20220623_Violeta,96.41,12.98,15.19
